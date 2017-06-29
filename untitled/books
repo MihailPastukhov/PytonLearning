@@ -1,0 +1,83 @@
+{
+	"books": [{
+			"case": "5 Hd",
+			"One Book": "STB/Other",
+			"Low Book": "LT",
+			"Rating": "ST POL Rating L",
+			"Product Date": "C",
+			"Pairings": "C LM 5"
+		},
+		{
+			"case": "9 Hd",
+			"One Book": "LT",
+			"Low Book": "GTD",
+			"Rating": "Rating L",
+			"Product Date": "C",
+			"Pairings": "C LM 1"
+		},
+		{
+			"case": "7 All",
+			"One Book": "All",
+			"Low Book": "GTD",
+			"Rating": "Rating L",
+			"Product Date": "C",
+			"Pairings": "C Index LM 3"
+		},
+		{
+			"case": "10 Hd",
+			"One Book": "STB/Other",
+			"Low Book": "TTd LT",
+			"Rating": "ST POL Rating L",
+			"Product Date": "C",
+			"Pairings": "C Expected 1"
+		},
+		{
+			"case": "4 Hd",
+			"One Book": "TTd LT",
+			"Low Book": "POL",
+			"Rating": "Rating L",
+			"Product Date": "C",
+			"Pairings": "C Expected 5"
+		},
+		{
+			"case": "2 Hd",
+			"One Book": "STB/Other LT",
+			"Low Book": "ST POL",
+			"Rating": "Rating L",
+			"Product Date": "C",
+			"Pairings": "C LM 5"
+		},
+		{
+			"case": "3 Hd",
+			"One Book": "LT",
+			"Low Book": "GTD",
+			"Rating": "Rating L",
+			"Product Date": "C",
+			"Pairings": "C LM 1"
+		},
+		{
+			"case": "1 All",
+			"One Book": "All",
+			"Low Book": "GTD",
+			"Rating": "Rating L",
+			"Product Date": "C",
+			"Pairings": "C"
+		},
+		{
+			"case": "8 Hd",
+			"One Book": "STB/Other TTd LT",
+			"Low Book": "ST POL",
+			"Rating": "Rating L",
+			"Product Date": "C",
+			"Pairings": "C Expected 1"
+		},
+		{
+			"case": "11 Hd",
+			"One Book": "TTd LT",
+			"Low Book": "POL",
+			"Rating": "Rating L",
+			"Product Date": "C",
+			"Pairings": "C Expected 5"
+		}
+	]
+}

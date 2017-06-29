@@ -1,0 +1,26 @@
+[
+    {
+        "case": "1 All", 
+        "Rating": "Rating L", 
+        "One Book": "All", 
+        "Product Date": "C", 
+        "Low Book": "GTD", 
+        "Pairings": "C"
+    }, 
+    {
+        "case": "8 Hd", 
+        "Rating": "Rating L", 
+        "One Book": "STB/Other TTd LT", 
+        "Product Date": "C", 
+        "Low Book": "ST POL", 
+        "Pairings": "C Expected 1"
+    }, 
+    {
+        "case": "11 Hd", 
+        "Rating": "Rating L", 
+        "One Book": "TTd LT", 
+        "Product Date": "C", 
+        "Low Book": "POL", 
+        "Pairings": "C Expected 5"
+    }
+]
