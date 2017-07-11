@@ -21,7 +21,7 @@ class HttpBin(object):
             header_to_send: dict with specified header, that should be send
             expected_received_header: expected_received_header: string with key of received header
 
-        Returns: a touple of two values. The first is response status.
+        Returns: a tuple of two values. The first is response status.
          The second is key of received expected header.
         """
         response = requests.get(url=host + get, headers=header_to_send)
@@ -42,7 +42,7 @@ class HttpBin(object):
         Args:
             data: a string with the number of lines to output
 
-        Returns: a touple of two values. The first is response status.
+        Returns: a tuple of two values. The first is response status.
          The second is number of output strings.
 
         """
@@ -54,7 +54,7 @@ class HttpBin(object):
         """
         Performs authentication based on specified user account data in the request.
         Args:
-            user_data: a touple of two values: user name and user password.
+            user_data: a tuple of two values: user name and user password.
 
         Returns:
         Returns status of authentication response.
@@ -69,7 +69,7 @@ class HttpBin(object):
         Args:
             query_string: a dict with specified number and values query string parameters
 
-        Returns: a  touple of two values. The first is response status.
+        Returns: a  tuple of two values. The first is response status.
          The second is query parameters of response.
 
         """
@@ -88,7 +88,7 @@ class HttpBin(object):
         Args:
             parameters: a dict with specified number and values query string parameters
 
-        Returns: a  touple of two values. The first is response status.
+        Returns: a tuple of two values. The first is response status.
          The second is query parameters of response.
 
         """
