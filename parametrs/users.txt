@@ -1,0 +1,46 @@
+{
+  "correct_users": [
+    {
+      "username": "user",
+      "password": "user"
+    },
+    {
+      "username": "developer",
+      "password": "developer"
+    },
+    {
+      "username": "admin",
+      "password": "admin"
+    }
+  ],
+  "incorrect_users": [
+    {
+      "username": "user1",
+      "password": "user"
+    },
+    {
+      "username": "user",
+      "password": "user1"
+    },
+    {
+      "username": "developer1",
+      "password": "developer"
+    },
+    {
+      "username": "developer",
+      "password": "developer1"
+    },
+    {
+      "username": "admin1",
+      "password": "admin"
+    },
+    {
+      "username": "admin",
+      "password": "admin1"
+    },
+    {
+      "username": "",
+      "password": ""
+    }
+  ]
+}

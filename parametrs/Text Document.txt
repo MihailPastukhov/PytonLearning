@@ -1,0 +1,26 @@
+import json
+
+@pytest.fixture(scope="function"):
+def output_json_filepath():
+    return 'path/to/file'
+
+@pytest.fixture(scope="function"):
+def json_data(request):
+    return request.param
+
+@pytest.fixture(scope="function"):
+def prepared_data(json_data):
+    # do something here?
+    return prepared_data
+
+# Not sure why you need this...
+@pytest.fixture(scope="function"):
+def dump_data(prepared_data, output_json_filepath):
+    with io.BytesIO(output_json_filepath, 'wb') as stream:
+        stream.write(prepared_data)
+
+...
+
+@pytest.mark.unit_test
+def some_test(prepared_data):
+    # use your prepared_data here in your test.

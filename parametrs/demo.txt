@@ -1,0 +1,12 @@
+def get_correct_users_data():
+    json_file = open(users_file_path, 'r').read()
+    json_data = json.loads(json_file)
+    users = json_data['correct_users']
+    return users
+
+
+def get_incorrect_users_data():
+    json_file = open(users_file_path, 'r').read()
+    json_data = json.loads(json_file)
+    users = json_data['incorrect_users']
+    return users
