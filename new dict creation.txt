@@ -1,0 +1,59 @@
+import json
+
+import datetime
+
+users_file_path = 'etc/employee_to_add.json'
+
+
+def get_correct_employee_data():
+    json_file = open(users_file_path, 'r').read()
+    json_data = json.loads(json_file)
+    users = json_data['data_to_add']['employees'][0]
+    return users
+
+
+def dict_to_universal_dict(dict_to_convert):
+    old_dict = dict_to_convert
+    new_dict = {
+        "PHONE_NUMBER": None,
+        "SALARY": None,
+        "FIRST_NAME": None,
+        "LAST_NAME": None,
+        "JOB_ID": None,
+        "HIRE_DATE": None,
+        "COMMISSION_PCT": None,
+        "EMPLOYEE_ID": None,
+        "MANAGER_ID": None,
+        "EMAIL": None,
+        "DEPARTMENT_ID": None
+    }
+    if old_dict.get('phone'):
+        new_dict.update({"PHONE_NUMBER": old_dict.get('phone')})
+    if old_dict.get('salary'):
+        new_dict.update({"SALARY": int(old_dict.get('salary'))})
+    if old_dict.get('name'):
+        new_dict.update({"FIRST_NAME": old_dict.get('name')})
+    if old_dict.get('surname'):
+        new_dict.update({"LAST_NAME": old_dict.get('surname')})
+    if old_dict.get('job_id'):
+        new_dict.update({"JOB_ID": old_dict.get('job_id')})
+    if old_dict.get('hire_date'):
+        new_dict.update({"HIRE_DATE": datetime.datetime.strptime(old_dict.get('hire_date'), "%Y-%m-%d %H:%M:%S.%f")})
+    if old_dict.get('commision'):
+        new_dict.update({"COMMISSION_PCT": float(old_dict.get('commision'))})
+    if old_dict.get('id'):
+        new_dict.update({"EMPLOYEE_ID": int(old_dict.get('id'))})
+    if old_dict.get('id2'):
+        new_dict.update({"MANAGER_ID": int(old_dict.get('id2'))})
+    if old_dict.get('email'):
+        new_dict.update({"EMAIL": old_dict.get('email')})
+    if old_dict.get('id3'):
+        new_dict.update({"DEPARTMENT_ID": int(old_dict.get('id3'))})
+    return new_dict
+
+
+tmp_dict = []
+for i in range(0, 15):
+    tmp_dict.append(dict_to_universal_dict(get_correct_employee_data()))
+for item in tmp_dict:
+    print item
